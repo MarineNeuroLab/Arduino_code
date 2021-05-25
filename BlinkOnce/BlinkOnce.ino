@@ -1,10 +1,10 @@
 
-const int Pin=6; //Change depending on which LED to use 
-//(3=blue, 5=green, 6=yellow, 9=red)
+const int Pin=11; //Change depending on which LED to use 
+//(3=blue, 5=green, 6=yellow, 9=red, 11=white)
 const int brightness=255; //Set brightness level for LED (0-255)
-const int duration=500; //Set duration LED should be on for in ms
-const int repetitions=10; //Set number of times the sequence should run
-const int durationDelay=500; //Set delay between repetitions in ms
+const int duration=1900; //Set duration LED should be on for in ms
+const int repetitions=3; //Set number of times the sequence should run
+const int durationDelay=20000; //Set delay between repetitions in ms
 
 void setup() {
   // Loop through pins to set them as output and off

@@ -1,13 +1,13 @@
 
-//This sketch turns 4 LEDs on and off in turn
+//This sketch turns 5 LEDs on and off in turn
 
 int Pins[5] = {3,5,6,9,11}; //Specify the pins to use
 //3=blue, 5=green, 6=yellow, 9=red, 11=white
 
 const int brightness=255; //Set brightness level for LEDs (0-255)
-const int durationON=200; //Set duration LED should be on for in ms
-const long intervalDelay=200; //Set duration of the delay in ms between LED activations
-const int repetitions=1; //Set number of times the sequence should run
+const int durationON=1000; //Set duration LED should be on for in ms
+const long intervalDelay=20000; //Set duration of the delay in ms between LED activations
+const int repetitions=3; //Set number of times the sequence should run
 
 void setup() {
   //Loop through pins to set them as output and off
