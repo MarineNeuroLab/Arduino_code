@@ -1,8 +1,8 @@
 
-//This sketch turns 4 LEDs on and fades them out in turn
+//This sketch turns 5 LEDs on and fades them out in turn
 
-int Pins[4] = {3,5,6,9}; //Specify the pins to use
-//3=blue, 5=green, 6=yellow, 9=red
+int Pins[4] = {3,5,6,9,11}; //Specify the pins to use
+//3=blue, 5=green, 6=yellow, 9=red, 11=white
 
 const int brightness=255; //Set starting brightness level for LEDs (0-255)
 const float fadeSpeed=2500; //Set duration the entire fade should last in ms
