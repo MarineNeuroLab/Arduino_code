@@ -1,4 +1,7 @@
 
+// Turn on a vibration motor, such as the 'Vibrating Mini Motor Disc 1201' from Adafruit
+// An indicator LED will also turn on when the motor is in use
+
 // Motor settings
 const int PinMotor=10 ; //The pin the vibration motor is connected to 
 const int power=200; //Set power level for motor (0-255)
