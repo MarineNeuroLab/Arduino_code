@@ -11,7 +11,7 @@ const int repetitions=3; //Set number of times the sequence should run
 
 void setup() {
   //Loop through pins to set them as output and off
-    for(int i=0; i<4; i++){
+    for(int i=0; i<5; i++){
     pinMode(Pins[i],OUTPUT);
     digitalWrite(Pins[i],LOW);
     }
