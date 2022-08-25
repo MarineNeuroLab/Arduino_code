@@ -1,6 +1,6 @@
 # Arduino code
  Code for various Arduino projects. 
- Some code is finished and ready to use (these typically have a fritzing diagram to show wiring) and some is still work in progress. 
+ Some code is finished and ready to use (these typically have a fritzing diagram to show wiring) and some are still work in progress. 
  
 ### Using LEDs
 | Folder                            | Description  |
