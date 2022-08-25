@@ -26,3 +26,9 @@
 | Folder                 | Description  |
 |:-----------------------|:-------------|
 | MeasureTemp            | measure the temperature in Celsius |
+
+### Using sensors from Blue Robotics
+| Folder                 | Description  |
+|:-----------------------|:-------------|
+| DepthDataToSD          | capture pressure and temperature data from the Bar100 sensor and save to a .txt file on an SD card |
+
