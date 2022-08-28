@@ -16,11 +16,12 @@
 | LEDsONindividualBrightess         | turn on one or more LEDs and leave them with each LEDs brightness set individually|
 | OneLEDon                          | turn on one LEDs and leave it on |
 
- ### Using a vibration motor
+ ### Using motors
 | Folder                 | Description  |
 |:-----------------------|:-------------|
 | VibrateOnce            | turn on a vibration motor and indicator LED |
 | VibrateWithButtonPress | turn on a vibration motor and indicator LED whenever a button is pressed |
+| StepperMotor           | continuously run a stepper motor in one direction at a set speed |
 
 ### Using a temperature sensor
 | Folder                 | Description  |
@@ -30,5 +31,7 @@
 ### Using sensors from Blue Robotics
 | Folder                 | Description  |
 |:-----------------------|:-------------|
-| DepthDataToSD          | capture pressure and temperature data from the Bar100 sensor and save to a .txt file on an SD card |
-
+| MeasureTempBR          | display temperature values (in Serial Monitor) captured in real time with the [Celsius Fast-Response, ±0.1°C Temperature Sensor](https://bluerobotics.com/store/sensors-sonars-cameras/sensors/celsius-sensor-r1/) |
+| CelsiusDataToSD        | capture temperature data from the [Celsius Fast-Response, ±0.1°C Temperature Sensor](https://bluerobotics.com/store/sensors-sonars-cameras/sensors/celsius-sensor-r1/) and save to a .txt file on an SD card |
+| MeasureDepthBR         | display temperature, pressure, depth, and altitude values (in Serial Monitor) captured in real time with the [Bar100 High-Resolution 1000m Depth/Pressure sensor](https://bluerobotics.com/store/sensors-sonars-cameras/sensors/bar100-sensor-r2-rp/) |
+| DepthDataToSD          | capture pressure and temperature data from the [Bar100 High-Resolution 1000m Depth/Pressure sensor](https://bluerobotics.com/store/sensors-sonars-cameras/sensors/bar100-sensor-r2-rp/) and save to a .txt file on an SD card |
