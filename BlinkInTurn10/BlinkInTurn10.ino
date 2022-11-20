@@ -4,7 +4,7 @@
 int Pins[10] = {2,4,6,8,10,3,5,7,9,11}; //Specify the pins to use
 //2,3=blue, 4,5=green, 6,7=yellow, 8,9=red, 10,11=white
 
-const int brightness=255; //Set brightness level for LEDs (0-255)
+const int brightness=255; //Set brightness level for LEDs (0-255) NOTE: CHANGING THIS VALUE FROM 255 WILL ONLY HAVE EFFECT ON LEDS ATTACHED TO PWM PINS (i.e. pins labelled ~)
 const int durationON=500; //Set duration LED should be on for in ms
 const long intervalDelay=500; //Set duration of the delay in ms between LED activations
 const int repetitions=1; //Set number of times the sequence should run
