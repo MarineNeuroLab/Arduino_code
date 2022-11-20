@@ -11,7 +11,7 @@
 | BlinkInTurn10                     | as BlinkInTurn but for 10 LEDs | Arduino UNO |
 | BlinkInTurnIndividualBrightness   | as BlinkAndFadeInTurn but specifying the brightness for each LED individually | Arduino UNO |
 | BlinkOnce                         | blink a single LED | Arduino UNO |
-| LEDcalibration                    | work in progress | Arduino UNO |
+| LEDcalibration                    | measures the light output from one LED with a phototransistor | Arduino UNO |
 | LEDsON                            | turn on one or more LEDs and leave them on | Arduino UNO |
 | LEDsONindividualBrightess         | turn on one or more LEDs and leave them with each LEDs brightness set individually| Arduino UNO |
 | OneLEDon                          | turn on one LED and leave it on | Arduino UNO |
