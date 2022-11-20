@@ -1,10 +1,11 @@
 // This sketch turns one LED on and leaves it on
-int pin = 11;
+const int pin = 11; //LED pin in use
+const int brightness = 70; //Set brightness level for LED (0-255)
 
 void setup() {
   // put your setup code here, to run once:
     pinMode(pin,OUTPUT);
-    analogWrite(pin,70);
+    analogWrite(pin,brightness);
 
 }
 
