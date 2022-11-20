@@ -14,7 +14,7 @@
 | LEDcalibration                    | work in progress | Arduino UNO |
 | LEDsON                            | turn on one or more LEDs and leave them on | Arduino UNO |
 | LEDsONindividualBrightess         | turn on one or more LEDs and leave them with each LEDs brightness set individually| Arduino UNO |
-| OneLEDon                          | turn on one LEDs and leave it on | Arduino UNO |
+| OneLEDon                          | turn on one LED and leave it on | Arduino UNO |
 
  ### Using motors
 | Folder                 | Description  | Microcontroller |
