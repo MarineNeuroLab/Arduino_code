@@ -21,7 +21,7 @@
 |:-----------------------|:-------------|:----------------|
 | VibrateOnce            | turn on a vibration motor and indicator LED | Arduino UNO |
 | VibrateWithButtonPress | turn on a vibration motor and indicator LED whenever a button is pressed | Arduino UNO |
-| StepperMotor           | continuously run a stepper motor in one direction at a set speed | Arduino UNO |
+| StepperMotor           | continuously run a [stepper motor](https://www.adafruit.com/product/918) in one direction at a set speed via a [breakout board](https://www.adafruit.com/product/3297) | Arduino UNO |
 
 ### Using a temperature sensor
 | Folder                 | Description  | Microcontroller |
