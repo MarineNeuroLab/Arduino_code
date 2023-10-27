@@ -1,6 +1,4 @@
-
 //This sketch turns up to 5 LEDs on at the same time
-
 int Pins[4] = {3,5,6,9,11}; //Specify the pins to use, remove the ones not to use
 //3=blue, 5=green, 6=yellow, 9=red, 11=white
 
