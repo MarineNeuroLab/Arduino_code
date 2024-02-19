@@ -8,7 +8,6 @@ When the MeasureTempAndSave.ino code is running on e.g. an Arduino Uno, it conti
 You need to have the python package [serial](https://pythonhosted.org/pyserial/) installed in your environment.
 
 ## Setup and use instructions
-
 - Wire up the Arduino and temperature sensor as shown in the Fritzing image and connect to your computer via USB
 - Install the necessary libraries (instructions in the .ino file) and upload the *MeasureTempAndSave.ino* code to the Arduino
 - Make a note of which USB port the Arduino is connected to (if it's connected successfully you should find this under "Tools")
