@@ -27,6 +27,7 @@
 | Folder                 | Description  | Microcontroller |
 |:-----------------------|:-------------|:----------------|
 | MeasureTemp            | measure the temperature in Celsius | Arduino UNO |
+| MeasureTempAndSave     | measure the temperature in Celsius and save the values automatically once per day | Arduino UNO |
 | MeasureTempThermistor  | measure the temperature in Celsius using a thermistor (code from Adafruit) | Arduino UNO |
 
 ### Using sensors from Blue Robotics
