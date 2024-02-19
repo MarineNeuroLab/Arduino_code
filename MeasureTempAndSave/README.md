@@ -2,7 +2,7 @@
 Read sensor data from a waterproof DS18B20 temperature sensor through an Arduino Uno connected to your PC via USB and save this data in a .csv file and as a plot at a specified time once per day.
 
 ## How it works
-When the MeasureTempAndSave.ino code is running on e.g. an Arduino Uno, it continuously outputs temperature data from the connected temperature sensor. The serial_reader_temp.py file runs on your PC and picks up the output at a user-defined delay, saves the values to a .csv file and creates a plot (.png file) once a day.
+When the *MeasureTempAndSave.ino* code is running on e.g. an Arduino Uno, it continuously outputs temperature data from the connected temperature sensor. The *serial_reader_temp.py* file runs on your PC and picks up the output at a user-defined delay, saves the values to a .csv file and creates a plot (.png file) once a day.
 
 ## Requirements
 You need to have the python package [serial](https://pythonhosted.org/pyserial/) installed in your environment.
