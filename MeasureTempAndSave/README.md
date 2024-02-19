@@ -1,4 +1,4 @@
-# Light_sensor
+# Measure temp and save
 Read sensor data from a waterproof DS18B20 temperature sensor through an Arduino Uno connected to your PC via USB and save this data in a .csv file and as a plot at a specified time once per day.
 
 ## How it works
