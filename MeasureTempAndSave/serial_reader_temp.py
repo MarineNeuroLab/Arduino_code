@@ -81,7 +81,6 @@ while True: #While True, run the following code to record and save temperature v
     # Once the while loop has been exited, print a status update in the terminal
     timeend = datetime.now().strftime('%Y-%m-%d_%H-%M-%S.%f') # Get the current time (as a string)
     print('Temperature measurements started saving just after {}, finished saving at {}'.format(timestart[0:-7],timeend[0:-7]))
-    print('Recording will continue in about 1 minute \n \n')
 
     # Create and save a plot of the values collected
     figure = plt.figure() #Create a plot
@@ -95,7 +94,9 @@ while True: #While True, run the following code to record and save temperature v
     plt.xlabel("Time")
     plt.ylabel("Temperature in degrees C")
     plt.savefig('{}/{}_temp.png'.format(root_folder,timeend[0:-7]),dpi=300)
+    print('Plot of measurements has been saved')
     
     # Include a break to avoid making unnecessary new files when the specified delay is shorter than a minute
-    time.sleep(59)
+    print('Recording will continue in about 1 minute \n \n')
+    time.sleep(61)
 
