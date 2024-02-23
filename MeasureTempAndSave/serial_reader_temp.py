@@ -59,24 +59,34 @@ while True: #While True, run the following code to record and save temperature v
             decoded_bytes_split = decoded_bytes.strip().split(',') #Strip away the prefix and suffix characters, and split the values using the comma as the separator
 
             # Extract the temperature value and convert it to a float
-            temp_value = float(decoded_bytes_split[0])
+            # after making sure the received value can be converted (if not that indiates something the value is corrupted and cannot be saved)
+            try:
+                temp_value = float(decoded_bytes_split[0])
+                
+            except:#If there is an error (i.e. the value above cannot be converted to float), get the current time and save that with a NaN instead
+                now = datetime.now().strftime('%Y-%m-%d_%H:%M:%S.%f')
+                f.write('{},NaN\n'.format(now[0:-4]))
+                timevec.append(now[0:-4])
+                tempvec.append('NaN') 
+                print('{} Error occured, value saved as NaN'.format(now[0:-7]))
 
-            # Get the current time (as a string)
-            now = datetime.now().strftime('%Y-%m-%d_%H:%M:%S.%f')
-           
-            # Save the values in the csv file and in the lists
-            f.write('{},{}\n'.format(now[0:-4],temp_value))
-            timevec.append(now[0:-4])
-            tempvec.append(temp_value)
-
-            # Print out the values in the terminal
-            print('{} | Temp: {} degrees C'.format(now[0:-4],temp_value))         
-
-            # Introduce the specified delay to only record values roughly every X seconds
-            time.sleep(delay)
+            else: #If there is no error, proceed as usual
+                # Get the current time (as a string)
+                now = datetime.now().strftime('%Y-%m-%d_%H:%M:%S.%f')
             
-            # Get the current time so the while loop can be evaluated again (is it appropriate to stay in the loop or exit it?)
-            timenow = datetime.now()
+                # Save the values in the csv file and in the lists
+                f.write('{},{}\n'.format(now[0:-4],temp_value))
+                timevec.append(now[0:-4])
+                tempvec.append(temp_value)
+
+                # Print out the values in the terminal
+                print('{} | Temp: {} degrees C'.format(now[0:-4],temp_value))         
+
+                # Introduce the specified delay to only record values roughly every X seconds
+                time.sleep(delay)
+                
+                # Get the current time so the while loop can be evaluated again (is it appropriate to stay in the loop or exit it?)
+                timenow = datetime.now()
             
     # Once the while loop has been exited, print a status update in the terminal
     timeend = datetime.now().strftime('%Y-%m-%d_%H-%M-%S.%f') # Get the current time (as a string)
