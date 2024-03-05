@@ -7,6 +7,10 @@
   Based on the Dallas Temperature Library example
 *********/
 
+//////// INPUT //////////
+const int setDelay = 1000; // Specify how long the delay between measurements should be in ms (Range: 0.5-50 seconds)
+/////////////////////////
+
 // Include libraries (need to be installed first via Sketch -> Include Library -> Manage Libraries...)
 #include <OneWire.h>
 #include <DallasTemperature.h>
@@ -35,5 +39,5 @@ void loop(void){
   //Serial.print("Temp in Celsius: ");
   // Why "byIndex"? You can have more than one IC on the same bus. 0 refers to the first IC on the wire
   Serial.println(sensors.getTempCByIndex(0)); //Get and print the temperature in Celsius
-  //delay(15000); //Introduce delay for a certain amount of time before requesting the next temperature reading
+  delay(setDelay); //Introduce delay for a certain amount of time before requesting the next temperature reading
 }
