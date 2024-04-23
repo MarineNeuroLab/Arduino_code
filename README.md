@@ -16,14 +16,26 @@
 | LEDsONindividualBrightess         | turn on one or more LEDs and leave them with each LEDs brightness set individually| Arduino UNO |
 | OneLEDon                          | turn on one LED and leave it on | Arduino UNO |
 
- ### Using motors
+### Using light sensors
+| Folder                 | Description  | Microcontroller |
+|:-----------------------|:-------------|:----------------|
+| LightSensor            | measure light values in lux | Metro ESP32-S2 |
+| LightSensorIO          | measure light values in lux and send values to Adafruit IO | Metro ESP32-S2 |
+
+### Using liquid/spill sensors
+| Folder                 | Description  | Microcontroller |
+|:-----------------------|:-------------|:----------------|
+| LiquidSensor           | detect the presence/absence of liquid | Adafruit Feather ESP32-S2|
+| LiquidSensorIO         | detect the presence/absence of liquid and send this information to Adafruit IO | Adafruit Feather ESP32-S2|
+
+### Using motors
 | Folder                 | Description  | Microcontroller |
 |:-----------------------|:-------------|:----------------|
 | VibrateOnce            | turn on a vibration motor and indicator LED | Arduino UNO |
 | VibrateWithButtonPress | turn on a vibration motor and indicator LED whenever a button is pressed | Arduino UNO |
 | StepperMotor           | continuously run a [stepper motor](https://www.adafruit.com/product/918) in one direction at a set speed via a [breakout board](https://www.adafruit.com/product/3297) | Arduino UNO |
 
-### Using a temperature sensor
+### Using temperature sensors
 | Folder                 | Description  | Microcontroller |
 |:-----------------------|:-------------|:----------------|
 | MeasureTemp            | measure the temperature in Celsius | Arduino UNO |
