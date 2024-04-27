@@ -11,7 +11,7 @@
 
 
 //////// INPUT //////////
-const int setDelay = 1000; // Specify how long the delay between measurements should be in ms (Range: 0.5-50 seconds)
+const int setDelay = 30000; // Specify how long the delay between measurements should be in ms (Range: 0.5-50 seconds)
 
 // which analog pin to connect
 #define THERMISTORPIN A0         
@@ -52,14 +52,14 @@ void loop(void) {
   }
   average /= NUMSAMPLES;
 
-  Serial.print("Average analog reading "); 
-  Serial.println(average);
+  //Serial.print("Average analog reading "); 
+  //Serial.println(average);
   
   // convert the value to resistance
   average = 1023 / average - 1;
   average = SERIESRESISTOR / average;
-  Serial.print("Thermistor resistance "); 
-  Serial.println(average);
+  //Serial.print("Thermistor resistance "); 
+  //Serial.println(average);
   
   float steinhart;
   steinhart = average / THERMISTORNOMINAL;     // (R/Ro)
@@ -69,7 +69,7 @@ void loop(void) {
   steinhart = 1.0 / steinhart;                 // Invert
   steinhart -= 273.15;                         // convert absolute temp to C
   
-  Serial.print(steinhart);
+  Serial.println(steinhart);
   
   delay(setDelay);
 }
