@@ -20,7 +20,7 @@
 | Folder                 | Description  | Microcontroller |
 |:-----------------------|:-------------|:----------------|
 | LightSensor            | measure light values in lux | Metro ESP32-S2 |
-| LightSensorIO          | measure light values in lux and send values to Adafruit IO | Metro ESP32-S2 |
+| LightSensorIO          | measure light values in lux and send rounded values to Adafruit IO | Metro ESP32-S2 |
 
 ### Using liquid/spill sensors
 | Folder                 | Description  | Microcontroller |
@@ -41,7 +41,7 @@
 | MeasureTemp            | measure the temperature in Celsius | Arduino UNO |
 | MeasureTempAndSave     | measure the temperature in Celsius and save the values automatically once per day | Arduino UNO |
 | MeasureTempThermistor  | measure the temperature in Celsius using a thermistor (code from Adafruit) | Arduino UNO |
-|MeasureTempAndSaveThermistor | measure the temperature in Celsius using a thermistor and save the values automatically once per day (WORK IN PROGRESS) | Arduino UNO |
+|MeasureTempAndSaveThermistor | measure the temperature in Celsius using a thermistor and save the values automatically once per day | Arduino UNO |
 
 ### Using sensors from Blue Robotics
 | Folder                 | Description  | Microcontroller |
