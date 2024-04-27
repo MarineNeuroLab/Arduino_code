@@ -108,7 +108,7 @@ void loop() {
   return;
 
   // save the rounded lux value to the 'light' feed on adafruit io
-  Serial.println(rounded_lux_value); Serial.print("-> sending rounded lux value"); 
+  Serial.print(rounded_lux_value); Serial.println("-> sending rounded lux value"); 
   light ->save(rounded_lux_value);
 
   // store the current lux value
